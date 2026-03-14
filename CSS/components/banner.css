@@ -1,4 +1,16 @@
 .banner {
+    animation: fadeBanner 1.5s ease;
+}
+
+@keyframes fadeBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
   background-image:
     linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%),
     url("../../images/banner.jpg");
@@ -20,17 +32,4 @@
   opacity: 0.8;
   margin-bottom: 40px;
 }
-.banner h4 {
-  animation: fadeBanner 1.5s ease;
-}
 
-@keyframes fadeBanner {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
