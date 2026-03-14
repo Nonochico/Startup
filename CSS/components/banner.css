@@ -1,35 +1,36 @@
- /* 1. Set a background image */
-  .banner {
-  background-image: , url(../../images/banner.jpg)  
-  /* 2. Make the background image cover the banner div */
-	background-size: cover;     
-  /* 3. Center the image */
-	background-position: center;
-    color: white;
-    padding: 150px 0px;
-    background-size: cover;
-    background-position: center;
-}
-.banner h1 {
+.banner {
+  background-image:
+    linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%),
+    url("../../images/banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+
   color: white;
+  padding: 150px 0;
+}
+
+.banner h1 {
   font-size: 50px;
 }
+
 .banner h2 {
-  color: white;
   font-size: 30px;
   font-weight: lighter;
   opacity: 0.8;
   margin-bottom: 40px;
 }
-.banner {
-  background-image:
-    /* Transparent gradient above */
-    linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%),
-    /* Then image below */
-    url(../../images/banner.jpg);
+.banner h4 {
+  animation: fadeBanner 1.5s ease;
 }
-.banner {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/background.jpg");
-  background-size: cover;
-  background-position: center;
+
+@keyframes fadeBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
