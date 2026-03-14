@@ -8,8 +8,21 @@
 
 
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  animation: fadeIn 1s ease;
+}
 
-
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
 	font font-family: 'Spectral', serif;
 	font-size: 18px;
