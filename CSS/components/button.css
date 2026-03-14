@@ -4,6 +4,8 @@
   padding: 12px 24px;
   border-radius: 6px;
   transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
 }
 
 .btn-blue:hover {
