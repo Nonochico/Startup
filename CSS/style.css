@@ -6,12 +6,14 @@
 @import url("components/banner.css");
 @import url("components/card.css");
 
-
-
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  font-family: 'Spectral', serif;
+  font-size: 18px;
+  margin: 0;
   animation: fadeIn 1s ease;
 }
 
@@ -23,15 +25,15 @@ body {
     opacity: 1;
   }
 }
-body {
-	font font-family: 'Spectral', serif;
-	font-size: 18px;
-	margin: 0px;
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
-h1,h2,h3 {
-	font-family: 'Roboto' sans-serif;
-	font-weight: bold;
-}
+
 a {
   text-decoration: none;
+}
+* {
+  box-sizing: border-box;
 }
