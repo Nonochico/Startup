@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
                 <a href="#">Sneak<span>TRP</span></a>
             </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="burger">
+                <i class="fas fa-bars"></i>
+            </label>
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#">Nouveautés</a></li>
@@ -29,22 +33,15 @@
                 <i class="fas fa-user"></i>
                 <i class="fas fa-shopping-bag"></i>
             </div>
-            <div class="burger">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </header>
 
-    <!-- Hero Banner -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-slider">
-            <div class="slide active" style="background-image: url('https://via.placeholder.com/1920x600/000000/FFFFFF?text=SneakTRP+Exclusive');">
-                <div class="slide-content">
-                    <h1>Exclusivité SneakTRP</h1>
-                    <p>Découvrez la nouvelle collection limitée</p>
-                    <a href="#" class="btn">Shop Now</a>
-                </div>
-            </div>
+        <div class="hero-content">
+            <h1>Exclusivité SneakTRP</h1>
+            <p>Découvrez la nouvelle collection limitée</p>
+            <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
 
@@ -52,11 +49,11 @@
     <section class="filters">
         <div class="container">
             <div class="filter-options">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="homme">Homme</button>
-                <button class="filter-btn" data-filter="femme">Femme</button>
-                <button class="filter-btn" data-filter="enfant">Enfant</button>
-                <button class="filter-btn" data-filter="solde">Soldes</button>
+                <a href="#all" class="filter-btn active">Tous</a>
+                <a href="#homme" class="filter-btn">Homme</a>
+                <a href="#femme" class="filter-btn">Femme</a>
+                <a href="#enfant" class="filter-btn">Enfant</a>
+                <a href="#solde" class="filter-btn">Soldes</a>
             </div>
         </div>
     </section>
@@ -67,108 +64,10 @@
             <h2 class="section-title">Nos meilleures ventes</h2>
             <div class="products-grid">
                 <!-- Exemple de produit -->
-                <div class="product-card homme">
+                <div class="product-card homme" id="homme">
                     <div class="product-img">
                         <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Nike+Air+Max" alt="Nike Air Max">
                         <span class="product-badge">Nouveau</span>
                     </div>
                     <div class="product-info">
                         <h3>Nike Air Max 2090</h3>
-                        <p class="product-price">149,99 €</p>
-                        <button class="add-to-cart">Ajouter au panier</button>
-                    </div>
-                </div>
-                <!-- Ajoute d'autres produits ici -->
-                <div class="product-card femme">
-                    <div class="product-img">
-                        <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Adidas+Stan+Smith" alt="Adidas Stan Smith">
-                    </div>
-                    <div class="product-info">
-                        <h3>Adidas Stan Smith</h3>
-                        <p class="product-price">99,99 €</p>
-                        <button class="add-to-cart">Ajouter au panier</button>
-                    </div>
-                </div>
-                <div class="product-card enfant">
-                    <div class="product-img">
-                        <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Puma+Kids" alt="Puma Kids">
-                        <span class="product-badge solde">-30%</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>Puma Suede Classic Kids</h3>
-                        <p class="product-price"><span class="old-price">69,99 €</span> 48,99 €</p>
-                        <button class="add-to-cart">Ajouter au panier</button>
-                    </div>
-                </div>
-                <div class="product-card homme">
-                    <div class="product-img">
-                        <img src="https://via.placeholder.com/300/000000/FFFFFF?text=Jordan+1" alt="Air Jordan 1">
-                    </div>
-                    <div class="product-info">
-                        <h3>Air Jordan 1 Mid</h3>
-                        <p class="product-price">129,99 €</p>
-                        <button class="add-to-cart">Ajouter au panier</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <h2>Inscris-toi à notre newsletter</h2>
-            <p>Reçois en avant-première les dernières sorties et offres exclusives.</p>
-            <form>
-                <input type="email" placeholder="Ton email" required>
-                <button type="submit" class="btn">S'inscrire</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>SneakTRP</h3>
-                    <p>La référence sneakers pour tous les styles.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Liens utiles</h3>
-                    <ul>
-                        <li><a href="#">Nouveautés</a></li>
-                        <li><a href="#">Marques</a></li>
-                        <li><a href="#">Soldes</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Aide</h3>
-                    <ul>
-                        <li><a href="#">Livraison</a></li>
-                        <li><a href="#">Retours</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">CGV</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 SneakTRP. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Script -->
-    <script src="script.js"></script>
-</body>
-</html>
-			
-
-
-			
